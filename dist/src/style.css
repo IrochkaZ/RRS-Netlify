@@ -6,6 +6,10 @@
     color: white;
 }
 
+
+body{
+    background-color: #2d2d2d;
+}
 ul {
     list-style-type: none;
 }
