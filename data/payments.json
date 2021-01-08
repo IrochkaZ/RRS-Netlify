@@ -18,7 +18,7 @@
       "bank_card_fragment": 7378,
       "payment_sum": 1,
       "repayment_sum": 1,
-      "transaction_income_id": 2,
+      "transaction_income_id": 3,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     },
     {
@@ -27,7 +27,16 @@
       "bank_card_fragment": 7378,
       "payment_sum": 1,
       "repayment_sum": 1,
-      "transaction_income_id": 2,
+      "transaction_income_id": 4,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1456,
+      "transaction_income_id": 5,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     },
     {
@@ -36,7 +45,7 @@
       "bank_card_fragment": 7378,
       "payment_sum": 1,
       "repayment_sum": 1,
-      "transaction_income_id": 2,
+      "transaction_income_id": 6,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     },
     {
@@ -44,16 +53,7 @@
       "payment_method": "Bank card",
       "bank_card_fragment": 7378,
       "payment_sum": 1,
-      "repayment_sum": 1,
-      "transaction_income_id": 2,
-      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
-    },
-    {
-      "date": "2020-05-12T14:14:25",
-      "payment_method": "Bank card",
-      "bank_card_fragment": 7378,
-      "payment_sum": 1,
-      "repayment_sum": 1,
+      "repayment_sum": 1451,
       "transaction_income_id": 400,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     },
@@ -63,7 +63,7 @@
       "bank_card_fragment": 7378,
       "payment_sum": 1,
       "repayment_sum": 1,
-      "transaction_income_id": 2,
+      "transaction_income_id": 7,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     },
     {
@@ -72,7 +72,7 @@
       "bank_card_fragment": 7378,
       "payment_sum": 400,
       "repayment_sum": 400,
-      "transaction_income_id": 2,
+      "transaction_income_id": 8,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     },
     {
@@ -81,7 +81,7 @@
       "bank_card_fragment": 7378,
       "payment_sum": 1,
       "repayment_sum": 200,
-      "transaction_income_id": 2,
+      "transaction_income_id": 9,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
     }
   ]
