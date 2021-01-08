@@ -11,6 +11,79 @@
       "repayment_sum": 1,
       "transaction_income_id": 2,
       "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
-    }
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1,
+      "transaction_income_id": 400,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+   {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 1,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 400,
+      "repayment_sum": 400,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
+    {
+      "date": "2020-05-12T14:14:25",
+      "payment_method": "Bank card",
+      "bank_card_fragment": 7378,
+      "payment_sum": 1,
+      "repayment_sum": 200,
+      "transaction_income_id": 2,
+      "transaction_income_guid": "03ace36a-d16e-4acb-a267-6505c4666399"
+    },
   ]
 }
+
