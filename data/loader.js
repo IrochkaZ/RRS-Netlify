@@ -1,7 +1,9 @@
 
-(function (name, selector) {
-    const URL = 'https://zaochnik1.com/static/public/', d = document,
-        nam = (name === 'shortAndLong') ? ['short', 'long'] : [name.toLowerCase()],
+const loader = document.getElementById('loader');
+const selector = loader.getAttribute('selector')
+
+const URL = 'https://zaochnik1.com/static/public/', d = document,
+    nam = (loader.getAttribute('name') === 'shortAndLong') ? ['short', 'long'] : [loader.getAttribute('name').toLowerCase()],
         sel = selector.replace(/\s+/g, '').split(','), script = [], link = [], c = [];
     nam.map((n) => {
         const data = {
@@ -25,4 +27,3 @@
     sel.map((e, a) => {
         const i = d.createElement("div"); i.classList.add("iframe"), i.innerHTML = c[a], d.querySelector(e).appendChild(i);
     });
-}());
