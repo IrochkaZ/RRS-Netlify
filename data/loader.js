@@ -6,7 +6,7 @@ if (loader && selector) {
     const URL = 'https://zaochnik1.com/static/public/';
     const d = document;
     const nam = (loader.getAttribute('name') === 'shortAndLong') ? ['short', 'long'] : [loader.getAttribute('name')];
-    const selector = selector.replace(/\s+/g, '').split(',');
+    const sel = selector.replace(/\s+/g, '').split(',');
     const script = [];
     const link = [];
     const c = [];
@@ -34,7 +34,7 @@ if (loader && selector) {
         Object.keys(opt).forEach(t => { script.setAttribute(t, opt[item]) });
         d.body.appendChild(script);
     });
-    selector.map((item, index) => {
+    sel.map((item, index) => {
         const iframe = d.createElement("div");
         iframe.classList.add("iframe");
         iframe.innerHTML = c[index];
