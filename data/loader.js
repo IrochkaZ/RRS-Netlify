@@ -10,7 +10,7 @@ if (loader && selector) {
     const link = [];
     const c = [];
 
-    nam.map((n) => {
+    nam.forEach((n) => {
         const data = {
             links: [`${URL}0.min.css`, `${URL}client_order_public_${n === 'short' ? 'short_blog_' : ''}iframe.min.css`],
             scripts: [`${URL}vuejs.min.js`,
@@ -26,23 +26,21 @@ if (loader && selector) {
     const scriptTotal = [...new Set(script)];
     const linksTotal = [...new Set(link)];
 
-    linksTotal.map((item) => {
+    linksTotal.forEach((item) => {
         const l = d.createElement('link');
         const opt = { rel: 'stylesheet', type: 'text/css', href: item };
         Object.keys(opt).forEach((i) => { l.setAttribute(i, opt[i]); });
         d.querySelector('head').appendChild(l);
-        return l;
     });
 
-    scriptTotal.map((item) => {
+    scriptTotal.forEach((item) => {
         const scr = d.createElement('script');
         const opt = { type: 'text/javascript', src: item };
         Object.keys(opt).forEach((i) => { scr.setAttribute(i, opt[i]); });
         d.body.appendChild(scr);
-        return scr;
     });
 
-    sel.map((item, index) => {
+    sel.forEach((item, index) => {
         const iframe = d.createElement('div');
         iframe.classList.add('iframe');
         iframe.innerHTML = c[index];
