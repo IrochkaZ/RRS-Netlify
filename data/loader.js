@@ -29,15 +29,17 @@ if (loader && selector) {
     linksTotal.map((item) => {
         const l = d.createElement('link');
         const opt = { rel: 'stylesheet', type: 'text/css', href: item };
-        Object.keys(opt).forEach((i) => { l.setAttribute(item, opt[i]); });
+        Object.keys(opt).forEach((i) => { l.setAttribute(i, opt[i]); });
         d.querySelector('head').appendChild(l);
+        return l;
     });
 
     scriptTotal.map((item) => {
         const scr = d.createElement('script');
         const opt = { type: 'text/javascript', src: item };
-        Object.keys(opt).forEach((i) => { scr.setAttribute(item, opt[i]); });
+        Object.keys(opt).forEach((i) => { scr.setAttribute(i, opt[i]); });
         d.body.appendChild(script);
+        return scr;
     });
 
     sel.map((item, index) => {
@@ -45,5 +47,6 @@ if (loader && selector) {
         iframe.classList.add('iframe');
         iframe.innerHTML = c[index];
         d.querySelector(item).appendChild(iframe);
+        return iframe;
     });
 }
