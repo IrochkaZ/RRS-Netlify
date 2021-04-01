@@ -1,1 +1,49 @@
-const loader=document.getElementById("order-public"),selector=loader.getAttribute("selector");if(loader&&selector){const e="https://zaochnik1.com/static/public/",t=document,r="shortAndLong"===loader.getAttribute("name")?["short","long"]:[loader.getAttribute("name")],s=selector.replace(/\s+/g,"").split(","),o=[],c=[],n=[];r.map(t=>{const r={links:[`${e}0.min.css`,`${e}client_order_public_${"short"===t?"short_blog_":""}iframe.min.css`],scripts:[`${e}vuejs.min.js`,`${e}client_order_public_${"short"===t?"short_blog_":""}iframe.min.js`],component:`<order-public-${"short"===t?"short-":""}landing></order-public-${"short"===t?"short-":""}landing>`};r.links.map(e=>c.push(e)),r.scripts.map(e=>o.push(e)),n.push(r.component)});const i=[...new Set(o)];[...new Set(c)].map(e=>{const r=t.createElement("link"),s={rel:"stylesheet",type:"text/css",href:e};Object.keys(s).forEach(e=>{r.setAttribute(e,s[e])}),t.querySelector("head").appendChild(r)}),i.map(e=>{const r=t.createElement("script"),s={type:"text/javascript",src:e};Object.keys(s).forEach(e=>{r.setAttribute(e,s[e])}),t.body.appendChild(r)}),s.map((e,r)=>{const s=t.createElement("div");s.classList.add("iframe"),s.innerHTML=n[r],t.querySelector(e).appendChild(s)})}
+const loader = document.getElementById('order-public');
+const selector = loader.getAttribute('selector');
+
+if (loader && selector) {
+    const URL = 'https://zaochnik1.com/static/public/';
+    const d = document;
+    const nam = (loader.getAttribute('name') === 'shortAndLong') ? ['short', 'long'] : [loader.getAttribute('name')];
+    const sel = selector.replace(/\s+/g, '').split(',');
+    const script = [];
+    const link = [];
+    const c = [];
+
+    nam.map((n) => {
+        const data = {
+            links: [`${URL}0.min.css`, `${URL}client_order_public_${n === 'short' ? 'short_blog_' : ''}iframe.min.css`],
+            scripts: [`${URL}vuejs.min.js`,
+                `${URL}client_order_public_${n === 'short' ? 'short_blog_' : ''}iframe.min.js`],
+            component: `<order-public-${n === 'short' ? 'short-' : ''}landing>
+            </order-public-${n === 'short' ? 'short-' : ''}landing>`,
+        };
+        data.links.map(l => link.push(l));
+        data.scripts.map(s => script.push(s));
+        c.push(data.component);
+    });
+
+    const scriptTotal = [...new Set(script)];
+    const linksTotal = [...new Set(link)];
+
+    linksTotal.map((item) => {
+        const l = d.createElement('link');
+        const opt = { rel: 'stylesheet', type: 'text/css', href: item };
+        Object.keys(opt).forEach((i) => { l.setAttribute(item, opt[i]); });
+        d.querySelector('head').appendChild(l);
+    });
+
+    scriptTotal.map((item) => {
+        const scr = d.createElement('script');
+        const opt = { type: 'text/javascript', src: item };
+        Object.keys(opt).forEach((i) => { scr.setAttribute(item, opt[i]); });
+        d.body.appendChild(script);
+    });
+
+    sel.map((item, index) => {
+        const iframe = d.createElement('div');
+        iframe.classList.add('iframe');
+        iframe.innerHTML = c[index];
+        d.querySelector(item).appendChild(iframe);
+    });
+}
