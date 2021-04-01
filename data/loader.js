@@ -38,7 +38,7 @@ if (loader && selector) {
         const scr = d.createElement('script');
         const opt = { type: 'text/javascript', src: item };
         Object.keys(opt).forEach((i) => { scr.setAttribute(i, opt[i]); });
-        d.body.appendChild(script);
+        d.body.appendChild(scr);
         return scr;
     });
 
