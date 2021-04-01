@@ -31,7 +31,7 @@ if (loader && selector) {
     scriptTotal.map(item => {
         const script = d.createElement("script");
         const opt = { type: "text/javascript", src: item };
-        Object.keys(opt).forEach(t => { script.setAttribute(t, opt[item]) });
+        Object.keys(opt).forEach(item => { script.setAttribute(item, opt[item]) });
         d.body.appendChild(script);
     });
     sel.map((item, index) => {
