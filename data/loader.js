@@ -3,6 +3,7 @@ const loader = document.getElementById('loader');
 const selector = loader.getAttribute('selector');
 
 if (loader && selector) {
+    console.log('true');
     const URL = 'https://zaochnik1.com/static/public/', d = document,
         nam = (loader.getAttribute('name') === 'shortAndLong') ? ['short', 'long'] : [loader.getAttribute('name')],
         sel = selector.replace(/\s+/g, '').split(','), script = [], link = [], c = [];
