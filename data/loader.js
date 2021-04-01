@@ -1,9 +1,10 @@
 
 const loader = document.getElementById('loader');
-const selector = loader.getAttribute('selector')
+const selector = loader.getAttribute('selector');
 
-const URL = 'https://zaochnik1.com/static/public/', d = document,
-    nam = (loader.getAttribute('name') === 'shortAndLong') ? ['short', 'long'] : [loader.getAttribute('name').toLowerCase()],
+if (loader && selector) {
+    const URL = 'https://zaochnik1.com/static/public/', d = document,
+        nam = (loader.getAttribute('name') === 'shortAndLong') ? ['short', 'long'] : [loader.getAttribute('name')],
         sel = selector.replace(/\s+/g, '').split(','), script = [], link = [], c = [];
     nam.map((n) => {
         const data = {
@@ -27,3 +28,4 @@ const URL = 'https://zaochnik1.com/static/public/', d = document,
     sel.map((e, a) => {
         const i = d.createElement("div"); i.classList.add("iframe"), i.innerHTML = c[a], d.querySelector(e).appendChild(i);
     });
+}
